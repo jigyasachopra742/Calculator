@@ -42,8 +42,8 @@ function Calculator()
   }
 
   const evaluate = (expression) => {
-    const operands = expression.split(/[\+\-\*\/\%/^]/); //matlab ki in operators pe split ho jayega and operands laa dega
-    const operators = expression.match(/[\+\-\*\/\%/^]/g); //matlab ki in operators pe match hoga
+    const operands = expression.split(/[\^\*\/\%\+/-]/); //matlab ki in operators pe split ho jayega and operands laa dega
+    const operators = expression.match(/[\^\*\/\%\+/-]/g); //matlab ki in operators pe match hoga
 
     let result = parseFloat(operands[0]); //7
 
